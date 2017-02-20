@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	console.log('Hello');
+
+	//deklaracja zmiennej i inicjalizacja zmiennej
+	var zmienna = 'Czesc';
+	console.log(zmienna);
+
+	// przypisanie wartości innej zmiennej do zmiennej
+	var innaZmienna = zmienna;
+
+	console.log(innaZmienna);
+
+	var numer = 10;
+	var numer2 = 12;
+
+	console.log(numer + numer2);
+	console.log(1 + 4);
+
+	//przypisanie
+	numer = 44;
+	console.log(numer+ numer2);
+
+	var wynik = numer + numer2;
+	console.log(wynik);
+
+	numer = 2;
+	numer2 = 4;
+
+	// return zwraca wynik dodawania
+	var dodawanie = function(){
+		return numer + numer2;
+	};
+
+	wynik = dodawanie();
+
+	console.log(wynik);
+
+	// funkcja z argumentami
+	var dodawanieDwochLiczb = function(a,b){
+		return a+b;
+	};
+
+	wynik = dodawanieDwochLiczb(12,21);
+	console.log(wynik);
+
+	wynik = dodawanieDwochLiczb(12,12);
+	console.log(wynik);
+
+
+	//typowa deklaracja funkcji
+	function mnozenie(a,b){
+		return a*b;
+	};
+
+	wynik = mnozenie(4,3);
+	console.log(wynik);
+
+	// Operacje matematyczne:
+	// + dodawanie
+	// - odejmowanie
+	// * mnozenie
+	// / dzielenie
+
+	// grupowanie jak w matmie
+	// console.log( 2+3*4 );
+	// console.log( (2+3)*4 );
+
+
+	var num = 2;
+	var ulamek = 2.1;
+	var string = 'Magda';
+	// zmienne typu logicznego
+	var boolean = false;
+
+	if(boolean){
+		console.log('true');
+	} else{
+		console.log(false);
+	}
+
+	wynik = '10';
+
+	if(wynik < 10){
+		console.log('Wynik mniejszy od 10');
+	} else if(wynik == 10){
+		console.log('Wynik rowny 10');	
+	} else{
+		console.log('Wynik większy od 10');
+	}
+
+	// Operatory logiczne:
+	//  < mniejszy
+	//  <= mniejszy rowny
+	//  > wiekszy
+	//  >= wiekszy rowny
+	//  == rowny
+	//  === rowny i tego samego typu
+
+	var wiek = 12;
+	var dokument = false;
+
+	if( (wiek <=18 || wiek >=65) && dokument){
+		console.log('Uprawniony do zniżek');
+	} else if( (wiek <=18 || wiek >= 65) && !dokument){
+		console.log('Brak dokumentu');
+	} else {
+		console.log('Brak uprawnień');
+	}
+
+
+	console.log(true);
+	// negacja
+	console.log(!true);
+
+	// Operatory logiczne:
+	// || lub
+	// && oraz
+	// == równy
+	// ! negacja
+
+	// true && true równa się true
+	// true && false równa się false
+	// false && false równe false
+
+	// true || true równe true
+	// true || false równe true
+	// false || false równe false
+
+
+	// (operacja logiczna )? (wynik jeśli prawda) : (wynik jeśli fałsz)
+	// operator ternarny
+	var cos = true ? console.log('prawda') : console.log('falsz');
+	cos = (12 < 5) ? console.log("mniejsze") : console.log('wieksze');
+
+	console.log('Cos w nawiasach '+ wynik +' cos w "cudzyslowie"');
+
+</script>
+
+</body>
+</html>
